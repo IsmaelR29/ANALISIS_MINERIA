@@ -1,514 +1,221 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Proyecto Final | Minería de Datos</title>
-
-<link rel="stylesheet" href="estilos.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Minería de Datos</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
 <body>
 
-<header>
+<header class="portada">
+    <h1>Producto Integrador</h1>
+    <h2>Proyecto Final de Minería de Datos</h2>
 
-<div class="overlay">
-
-<h1>Producto integrador. Proyecto final de minería de datos</h1>
-
-<p>
-Análisis de información y minería de datos para la toma de decisiones| Universidad de Guadalajara Virtual
-</p>
-
-<p class="autor">
-Ismael Romo Quintero
-</p>
-
-<a href="#teoria" class="btn">
-Ver Proyecto
-</a>
-
-</div>
-
+    <div class="datos">
+        <p><strong>Alumno:</strong> Ismael Romo</p>
+        <p><strong>Materia:</strong> Análisis de la Información</p>
+        <p><strong>Profesor:</strong> __________________</p>
+        <p><strong>Universidad:</strong> Universidad de Guadalajara</p>
+        <p><strong>Fecha:</strong> 2026</p>
+    </div>
 </header>
 
 <nav>
-
-<a href="#teoria">Base Teórica</a>
-<a href="#kdd">Proceso KDD</a>
-<a href="#resultados">Resultados</a>
-<a href="#dashboard">Dashboard</a>
-<a href="#conclusiones">Conclusiones</a>
-
+    <a href="#teoria">Base Teórica</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#referencias">Referencias</a>
 </nav>
-
-<section id="introduccion">
-
-<h2>Introducción</h2>
-
-<p>
-El presente proyecto tiene como objetivo aplicar técnicas de minería de datos
-utilizando herramientas de análisis para identificar patrones dentro de un conjunto
-de datos relacionado con sensores industriales y monitoreo de tanques.
-</p>
-
-<p>
-Para el desarrollo del proyecto se utilizaron herramientas como WEKA,
-GitHub Pages, HTML, CSS y JavaScript. Además, se implementaron técnicas
-de clasificación y agrupamiento mediante los algoritmos J48 y K-Means.
-</p>
-
-</section>
 
 <section id="teoria">
 
-<h2>Base Teórica</h2>
-
-<div class="cards">
-
-<div class="card">
-<i class="fas fa-database"></i>
-<h3>Sociedad de la Información</h3>
-
-<p>
-La sociedad de la información se caracteriza por el uso intensivo
-de tecnologías digitales para generar, almacenar y compartir información.
-</p>
-
-</div>
-
-<div class="card">
-<i class="fas fa-brain"></i>
-
-<h3>Sociedad del Conocimiento</h3>
-
-<p>
-La sociedad del conocimiento transforma la información en aprendizaje útil
-para la toma de decisiones y generación de innovación.
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-chart-line"></i>
-
-<h3>Inteligencia de Negocios</h3>
-
-<p>
-La inteligencia de negocios permite analizar información empresarial
-para apoyar procesos estratégicos y operativos.
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-cubes"></i>
-
-<h3>OLAP</h3>
-
-<p>
-OLAP permite realizar análisis multidimensional de datos
-facilitando consultas complejas y generación de reportes.
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-search"></i>
-
-<h3>Minería de Datos</h3>
-
-<p>
-La minería de datos busca descubrir patrones, tendencias y relaciones ocultas
-dentro de grandes volúmenes de información.
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-network-wired"></i>
-
-<h3>Vista Minable</h3>
-
-<p>
-La vista minable es un conjunto de datos preparado específicamente
-para aplicar algoritmos de minería de datos.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="kdd">
-
-<h2>Proceso KDD</h2>
-
-<div class="timeline">
-
-<div class="timeline-item">
-
-<h3>1. Selección de Datos</h3>
-
-<p>
-Se seleccionaron datos relevantes del sistema de monitoreo de sensores.
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>2. Limpieza de Datos</h3>
-
-<p>
-Se verificó la consistencia y calidad de los datos eliminando errores.
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>3. Transformación</h3>
-
-<p>
-Los datos fueron convertidos a formato CSV para su análisis en WEKA.
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>4. Minería de Datos</h3>
-
-<p>
-Se aplicaron algoritmos de clasificación y clustering.
-</p>
-
-</div>
-
-<div class="timeline-item">
-
-<h3>5. Interpretación</h3>
-
-<p>
-Los resultados fueron analizados para identificar patrones y tendencias.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Tareas y Técnicas de Minería de Datos</h2>
-
-<table>
-
-<tr>
-<th>Tarea</th>
-<th>Técnica</th>
-<th>Algoritmo Utilizado</th>
-</tr>
-
-<tr>
-<td>Clasificación</td>
-<td>Árboles de decisión</td>
-<td>J48</td>
-</tr>
-
-<tr>
-<td>Agrupamiento</td>
-<td>Clustering</td>
-<td>K-Means</td>
-</tr>
-
-<tr>
-<td>Asociación</td>
-<td>Reglas de asociación</td>
-<td>Apriori</td>
-</tr>
-
-</table>
-
-</section>
-
-<section>
-
-<h2>Herramientas ETL y Tecnologías</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>ETL</h3>
-
-<p>
-Las herramientas ETL permiten realizar procesos de extracción,
-transformación y carga de datos.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Data Warehouse</h3>
-
-<p>
-Es un almacén centralizado de datos utilizado para análisis empresarial.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>DataMart</h3>
-
-<p>
-Es una subdivisión especializada de un Data Warehouse.
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>MOLAP</h3>
-
-<p>
-Permite el análisis multidimensional mediante cubos de información.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Herramientas de Minería de Datos</h2>
-
-<ul class="lista">
-
-<li>WEKA</li>
-<li>RapidMiner</li>
-<li>KNIME</li>
-<li>Orange Data Mining</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h2>Técnicas de Minería de Datos</h2>
-
-<ul class="lista">
-
-<li>Clasificación</li>
-<li>Clustering</li>
-<li>Predicción</li>
-<li>Asociación</li>
-<li>Regresión</li>
-
-</ul>
+    <h2>Base Teórica</h2>
+
+    <h3>Sociedad de la Información</h3>
+    <p>
+        La sociedad de la información es un modelo social donde la generación,
+        distribución y manipulación de la información forman parte fundamental
+        de las actividades económicas y sociales.
+    </p>
+
+    <h3>Inteligencia de Negocios</h3>
+    <p>
+        La inteligencia de negocios permite analizar información empresarial
+        para apoyar la toma de decisiones mediante reportes, indicadores y dashboards.
+    </p>
+
+    <h3>OLAP</h3>
+    <p>
+        OLAP permite analizar datos multidimensionales para generar consultas
+        rápidas y estratégicas.
+    </p>
+
+    <h3>Minería de Datos</h3>
+    <p>
+        La minería de datos consiste en descubrir patrones ocultos dentro de grandes
+        volúmenes de información.
+    </p>
+
+    <h3>Proceso KDD</h3>
+
+    <ul>
+        <li>Selección de datos</li>
+        <li>Preprocesamiento</li>
+        <li>Transformación</li>
+        <li>Minería de datos</li>
+        <li>Interpretación de resultados</li>
+    </ul>
+
+    <h3>Tareas y Técnicas de Minería</h3>
+
+    <p>
+        Las técnicas más utilizadas son:
+    </p>
+
+    <ul>
+        <li>Clasificación</li>
+        <li>Agrupamiento</li>
+        <li>Predicción</li>
+        <li>Asociación</li>
+    </ul>
+
+    <h3>Herramientas ETL</h3>
+
+    <p>
+        Las herramientas ETL permiten extraer, transformar y cargar datos.
+    </p>
+
+    <ul>
+        <li>Pentaho</li>
+        <li>Talend</li>
+        <li>SQL Server Integration Services</li>
+    </ul>
+
+    <h3>Vista Minable</h3>
+
+    <p>
+        Una vista minable es un conjunto de datos preparado específicamente
+        para aplicar técnicas de minería de datos.
+    </p>
+
+    <h3>Herramientas de Minería</h3>
+
+    <ul>
+        <li>Weka</li>
+        <li>RapidMiner</li>
+        <li>Orange</li>
+    </ul>
+
+    <h3>Técnicas Utilizadas</h3>
+
+    <p>
+        En este proyecto se utilizó clasificación mediante el algoritmo J48
+        y agrupamiento mediante SimpleKMeans.
+    </p>
 
 </section>
 
 <section id="resultados">
 
-<h2>Resultados del Análisis</h2>
+    <h2>Resultados del Análisis</h2>
 
-<p>
-Para el análisis de datos se utilizó el archivo:
-<b>ADI_U2_ACT_INTEG_ROMO.csv</b>,
-el cual contiene información relacionada con sensores industriales.
-</p>
+    <h3>Almacén de Datos</h3>
 
-<h3>Herramientas Utilizadas</h3>
+    <p>
+        El almacén de datos contiene información de sensores de tanques industriales.
+    </p>
 
-<ul class="lista">
+    <h3>Herramientas Utilizadas</h3>
 
-<li>WEKA Explorer</li>
-<li>GitHub Pages</li>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
+    <ul>
+        <li>Weka</li>
+        <li>GitHub Pages</li>
+        <li>HTML, CSS y JavaScript</li>
+    </ul>
 
-</ul>
+    <h3>Técnicas Utilizadas</h3>
 
-<h3>Técnicas Utilizadas</h3>
+    <ul>
+        <li>Clasificación con J48</li>
+        <li>Clustering con SimpleKMeans</li>
+    </ul>
 
-<ul class="lista">
+    <h3>Interpretación de Resultados</h3>
 
-<li>Clasificación mediante J48</li>
-<li>Clustering mediante K-Means</li>
+    <p>
+        El algoritmo J48 generó un árbol de decisión utilizando el atributo
+        valor_lectura como principal criterio de clasificación.
+    </p>
 
-</ul>
+    <p>
+        Los resultados mostraron que:
+    </p>
 
-</section>
+    <ul>
+        <li>Valores menores o iguales a 50 corresponden a sensores de temperatura.</li>
+        <li>Valores entre 51 y 130 corresponden a sensores de presión.</li>
+        <li>Valores mayores a 130 corresponden a sensores de nivel.</li>
+    </ul>
 
-<section>
-
-<h2>Capturas del Análisis</h2>
-
-<div class="galeria">
-
-<div class="imagen">
-
-<img src="img/preprocess.png" alt="Preprocess">
-
-<p>
-Carga y visualización del conjunto de datos en WEKA.
-</p>
-
-</div>
-
-<div class="imagen">
-
-<img src="img/j48.png" alt="J48">
-
-<p>
-Resultados obtenidos utilizando el algoritmo J48.
-</p>
-
-</div>
-
-<div class="imagen">
-
-<img src="img/kmeans.png" alt="Kmeans">
-
-<p>
-Agrupamiento de datos mediante el algoritmo K-Means.
-</p>
-
-</div>
-
-</div>
+    <p>
+        El modelo obtuvo una precisión del 86.66%, clasificando correctamente
+        13 de las 15 instancias analizadas.
+    </p>
 
 </section>
 
 <section id="dashboard">
 
-<h2>Panel Gerencial (Dashboard)</h2>
+    <h2>Dashboard</h2>
 
-<div class="dashboard">
+    <div class="imagenes">
 
-<div class="dash-card">
+        <div class="card">
+            <h3>Preprocesamiento</h3>
+            <img src="img/preprocess.png" alt="">
+        </div>
 
-<h3>Precisión J48</h3>
+        <div class="card">
+            <h3>Atributos</h3>
+            <img src="img/atributos.png" alt="">
+        </div>
 
-<span>86.66%</span>
+        <div class="card">
+            <h3>Clasificación J48</h3>
+            <img src="img/j48.png" alt="">
+        </div>
 
-</div>
+        <div class="card">
+            <h3>Resultados</h3>
+            <img src="img/resultados.png" alt="">
+        </div>
 
-<div class="dash-card">
-
-<h3>Instancias</h3>
-
-<span>15</span>
-
-</div>
-
-<div class="dash-card">
-
-<h3>Correctas</h3>
-
-<span>13</span>
-
-</div>
-
-<div class="dash-card">
-
-<h3>Clusters</h3>
-
-<span>2</span>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-<section id="conclusiones">
+<section id="referencias">
 
-<h2>Conclusiones</h2>
+    <h2>Referencias APA</h2>
 
-<p>
-El proyecto permitió aplicar técnicas de minería de datos
-para identificar patrones dentro de un conjunto de datos industriales.
-</p>
+    <p>
+        Han, J., Kamber, M., & Pei, J. (2012).
+        Data Mining: Concepts and Techniques.
+        Morgan Kaufmann.
+    </p>
 
-<p>
-El algoritmo J48 logró una precisión del 86.66%,
-clasificando correctamente 13 de las 15 instancias analizadas.
-</p>
-
-<p>
-Por otra parte, K-Means permitió agrupar registros similares,
-facilitando la interpretación de comportamientos dentro del sistema.
-</p>
-
-<p>
-Los resultados obtenidos demuestran la utilidad de las técnicas
-de minería de datos para apoyar procesos de análisis y toma de decisiones.
-</p>
-
-</section>
-
-<section>
-
-<h2>Referencias APA</h2>
-
-<ul class="referencias">
-
-<li>
-Han, J., Kamber, M., & Pei, J. (2012).
-Data Mining: Concepts and Techniques.
-Morgan Kaufmann.
-</li>
-
-<li>
-Witten, I. H., Frank, E., & Hall, M. (2016).
-Data Mining: Practical Machine Learning Tools and Techniques.
-Elsevier.
-</li>
-
-<li>
-Oracle. (2024). What is OLAP.
-https://www.oracle.com
-</li>
-
-<li>
-WEKA Documentation. (2024).
-https://www.cs.waikato.ac.nz/ml/weka/
-</li>
-
-</ul>
+    <p>
+        Witten, I. H., Frank, E., & Hall, M. A. (2011).
+        Data Mining Practical Machine Learning Tools and Techniques.
+        Elsevier.
+    </p>
 
 </section>
 
 <footer>
-
-<p>
-Proyecto Final de Minería de Datos | UDG Virtual
-</p>
-
+    <p>Proyecto Final de Minería de Datos - UDG Virtual</p>
 </footer>
 
 <script src="script.js"></script>
